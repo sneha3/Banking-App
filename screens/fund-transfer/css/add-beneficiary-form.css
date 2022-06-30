@@ -1,0 +1,28 @@
+.background-wrapper {
+    background-color: white;
+    padding: 0.5rem 1rem 5rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.45);
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add-beneficiary-star {
+    color: red;
+}
+
+#add-beneficiary-account-2,
+#add-beneficiary-username,
+#add-beneficiary-bankname,
+#add-beneficiary-error-label {
+    color: red;
+}
+
+.add-beneficiary-save-btn:hover {
+    cursor: not-allowed
+}

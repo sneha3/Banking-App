@@ -1,0 +1,10 @@
+.bill-recharge-card {
+    margin-top: 5rem;
+    width: 21rem;
+    box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.45);
+    margin-bottom: 10rem;
+}
+
+.recharge-icon {
+    float: right
+}

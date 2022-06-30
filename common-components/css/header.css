@@ -1,0 +1,103 @@
+#common-header {
+  background-color: rgb(71, 150, 241);
+  font-size: 3.125rem;
+  padding: 0.625rem;
+  font-weight: bold;
+  height: 5rem;
+  margin: 0;
+  display: block;
+}
+
+#common-header-icon-wrapper {
+  position: sticky;
+  margin-top: -0.5rem;
+}
+
+#common-header-heading {
+  color: white;
+  top: 1px;
+  position: absolute;
+  left: 3.125rem;
+}
+
+#common-header-c {
+  right: 6.25rem;
+  color: #fc628f;
+  font-size: 3.125rem;
+}
+
+.common-header-header-icon {
+  position: absolute;
+  cursor: pointer;
+}
+
+.common-header-header-icon:focus {
+  border-radius: 1rem;
+  background-color: rgb(1, 65, 138);
+}
+
+#common-header-notification-bell {
+  right: 4.375rem;
+  top: 0.938rem;
+  font-size: 3.125rem;
+  color: white;
+}
+
+#common-header-avatar {
+  right: 1.563rem;
+  top: 0.938rem;
+  font-size: 3.125rem;
+  color: rgb(0, 0, 0);
+}
+
+#common-header-avatar:focus {
+  color: white;
+}
+
+#common-header-avatar-down-arrow {
+  right: 0rem;
+  top: 1.563rem;
+  font-size: 1.875rem;
+  color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  #common-header-notification-bell {
+    right: 3.15rem;
+    font-size: 3rem;
+  }
+  #common-header-avatar {
+    right: 0.675rem;
+    font-size: 3rem;
+  }
+  #common-header-heading {
+    position: absolute;
+    left: 3.125rem;
+  }
+  #common-header-avatar-down-arrow {
+    right: -0.7rem;
+    top: 1.563rem;
+    font-size: 1.875rem;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  #common-header-notification-bell {
+    right: 6.25rem;
+  }
+  #common-header-avatar {
+    right: 1.875rem;
+  }
+  #common-header-heading {
+    position: absolute;
+    left: 3.125rem;
+  }
+}
+
+@media screen and (min-width: 1058px) {
+  #common-header-heading {
+    position: absolute;
+    left: 0.625rem;
+  }
+}

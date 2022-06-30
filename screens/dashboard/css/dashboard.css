@@ -1,0 +1,115 @@
+.dashboard {
+  line-height: 1.8;
+  font-family: "Roboto", sans-serif;
+  color: #555e58;
+  font-weight: 200;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: #f7f8f8;
+}
+.dashboard-credit #cards-detail {
+  margin-top: 0rem;
+}
+
+.dashboard-credit #cards-submit {
+  margin-top: -0.1rem;
+}
+
+.dataTables_paginate {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.dashboard-scroll {
+  overflow-y: hidden;
+}
+
+.dashboard-grid {
+  display: block;
+  width: 100%;
+}
+
+.dashboard-credit {
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.dashboard-credit .cards-card {
+  max-height: 22rem;
+  width: 100%;
+  border-radius: 0;
+}
+.dashboard-transactions {
+  padding-top: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+.dashboard-transactions #transaction-table {
+  max-height: 22rem;
+  overflow: scroll;
+}
+
+.dashboard-transactions #table-head {
+  margin-top: -0.5rem;
+}
+
+/* .dashboard-transactions #dashboard-transaction-pagination{
+    width: 100%;
+} */
+
+.dashboard-transactions::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  display: none;
+}
+
+#transaction-table::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  display: none;
+}
+
+#benificiary-table::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  display: none;
+}
+
+.dashboard-cards-card {
+  width: 97%;
+  height: 30.1rem;
+}
+
+.dashboard-bills {
+  margin-top: 1rem;
+}
+
+.funds-table {
+  margin-top: -2.9rem;
+}
+.dashboard-funds #benificiary-table {
+  max-height: 22rem;
+  overflow: scroll;
+}
+.dashboard-funds #fund-row-1 {
+  display: none;
+}
+.dashboard-funds #search-head {
+  border-top: 0;
+  padding-top: 1rem;
+}
+/* .dashboard-funds #add-table-1{
+    width: 100%;
+} */
+@media screen and (max-width: 1180px) {
+  .dashboard-credit {
+    margin-top: -2.5rem;
+  }
+  .billsSmallScreen {
+    margin-top: -1.5rem;
+  }
+}

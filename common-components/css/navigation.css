@@ -1,0 +1,54 @@
+#common-navigation-nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: white;
+  display: none;
+}
+
+.common-navigation-nav-list a {
+  display: block;
+  color: #000;
+  height: 3.125rem;
+  text-decoration: none;
+  font-size: medium;
+  border-top: rgb(190, 187, 187) solid 0.063rem;
+  text-emphasis-position: initial;
+}
+
+.common-navigation-nav-list a.active {
+  background-color: rgba(14, 126, 231, 0.952);
+  color: white;
+  text-decoration: none;
+}
+
+.common-navigation-nav-list a:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  text-decoration: none;
+}
+
+.common-navigation-label-nav-desktop {
+  position: relative;
+  top: 0.45rem;
+}
+
+.common-navigation-nav-icon-desktop {
+  position: relative;
+  top: 0.75rem;
+  margin-left: 1rem;
+}
+
+.common-navigation-arrow-icon-desktop {
+  position: relative;
+  top: 0.75rem;
+  margin-right: 0.2rem;
+  float: right;
+}
+
+@media screen and (min-width: 1240px) {
+  #common-navigation-nav-bar {
+    width: 13rem;
+    display: inline;
+  }
+}

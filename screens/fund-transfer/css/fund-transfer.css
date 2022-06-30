@@ -1,0 +1,63 @@
+.backgrounds-wrapper {
+  padding: 0.5rem 1rem 1rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cts-size {
+  font-size: 1rem;
+}
+
+.ref-size {
+  font-size: 0.8rem;
+}
+
+.transactions-table {
+  border-collapse: separate;
+  border-spacing: 0rem;
+}
+
+.transactions-table-head {
+  position: sticky;
+  top: 0;
+}
+
+.search {
+  width: 13rem;
+  height: 2rem;
+}
+
+.has-search {
+  float: right;
+  margin-bottom: -0.2rem;
+}
+
+#search-head {
+  margin-bottom: -1rem;
+}
+
+#fundsDrag {
+  cursor: move;
+}
+
+.paginate_button {
+  padding: 0.2em 0.6em !important;
+  margin-bottom: 0.1rem !important;
+}
+
+@media screen and (max-width: 700px) {
+  .background-wrapper {
+    margin-top: 1rem;
+  }
+  #profile-name {
+    margin-left: 150px;
+  }
+}
+
+.totalBeneficiaries {
+  margin-bottom: -2rem;
+  font-size: 0.8rem;
+}
+
+#submitbtn[disabled="disabled"]:hover {
+  cursor: not-allowed;
+}

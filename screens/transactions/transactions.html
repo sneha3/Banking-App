@@ -1,0 +1,32 @@
+<div class="background-wrapper">
+    <div class="table-responsive bg-white shadow pr-4 pl-4" id="transaction-table">
+        <table class="table table-hover transactions-table transaction-table-table w-100">
+            <thead class="bg-white transactions-table-head">
+                <tr>
+                    <th style="border-top: 0; margin-bottom: -1rem" scope="row" colspan="5">
+                        <div class="font-weight-bold pt-3">
+                            <div class="mainHeading font-weight-bold">Last Transactions</div>
+                            <div class="form-group has-search">
+                                <input type="text" class="form-control search" placeholder="Filter by date and type" onkeyup="app.filter()" />
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr id="table-head">
+                    <th scope="col" data-tablesort="text">
+                        Narration
+                    </th>
+                    <th scope="col"></th>
+                    <th scope="col" data-tablesort="date">Date</th>
+                    <th scope="col">Type</th>
+                    <th scope="col" data-tablesort="number">Closing Balance</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-body"></tbody>
+        </table>
+    </div>
+</div>
+<script>
+    loadCss("screens/transactions/css/transaction.css");
+    loadJavascript("screens/transactions/js/transacations.js");
+</script>

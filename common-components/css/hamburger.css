@@ -1,0 +1,81 @@
+.common-hamburger-topnav {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  float: left;
+  top: 1.2rem;
+  right: 0rem;
+}
+
+.common-hamburger-topnav #common-hamburger-myLinks {
+  display: none;
+}
+
+.common-hamburger-topnav a {
+  border-bottom: rgb(190, 187, 187) solid 1px;
+  color: black;
+  padding: 0.875rem;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.25rem;
+  display: block;
+  background-color: white;
+}
+
+.common-hamburger-topnav a.common-hamburger-icon {
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.common-hamburger-topnav a:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  text-decoration: none;
+}
+
+.common-hamburger-topnav a.active {
+  background-color: rgba(14, 126, 231, 0.952);
+  color: white;
+  text-decoration: none;
+}
+
+#common-hamburger-hamburger {
+  height: 3.75rem;
+  width: 1.5rem;
+  margin: 0rem;
+  top: 1rem;
+}
+
+#common-hamburger-hamicon {
+  margin: 0rem;
+  background-color: rgb(71, 150, 241);
+}
+
+#common-hamburger-hamicon:hover {
+  background-color: rgb(71, 150, 241);
+  color: rgb(255, 255, 255);
+}
+
+.common-hamburger-label-nav {
+  position: relative;
+  top: 0rem;
+}
+
+.common-hamburger-nav-icon {
+  position: relative;
+  top: 0.313rem;
+}
+
+.common-hamburger-hamburger-icon {
+  position: relative;
+  top: -0.313rem;
+}
+
+@media screen and (min-width: 1058px) {
+  .common-hamburger-topnav {
+    display: none;
+  }
+}

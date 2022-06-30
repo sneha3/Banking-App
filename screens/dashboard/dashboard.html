@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="./screens/dashboard/css/dashboard.css" />
+<div>
+  <div class="dashboard-account">
+    <account-summary></account-summary>
+  </div>
+
+  <div class="mt-2">
+    <div class="row no-gutters">
+      <div class="col-lg-12 col-xl-7">
+        <div class="dashboard-transactions">
+          <transactions> </transactions>
+        </div>
+      </div>
+      <div class="col-lg-12 col-xl-5 d-flex">
+        <div class="dashboard-credit flex-fill pl-3 pr-3">
+          <cards></cards>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-gutters funds-table">
+      <div class="col-lg-12 col-xl-7">
+        <div class="dashboard-funds">
+          <funds></funds>
+        </div>
+      </div>
+      <div class="col-lg-12 col-xl-5 billsSmallScreen">
+        <div class="md:pr-3 lg:pr-0">
+          <bills></bills>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  loadCss("screens/transactions/css/transaction.css");
+  loadJavascript("screens/transactions/js/transacations.js");
+  loadCss("screens/cards/css/cards.css");
+  loadJavascript("screens/cards/js/cards.js");
+  loadJavascript("common-components/js/disable-button.js");
+  loadCss("screens/fund-transfer/css/fund-transfer.css");
+  loadJavascript("screens/fund-transfer/js/fund-transfer-data.js");
+  loadCss("screens/dashboard/css/account-summary.css");
+  loadCss("screens/dashboard/css/bills.css");
+  loadCss("screens/dashboard/css/dashboard.css");
+  loadJavascript("screens/fund-transfer/js/search-beneficiary-name.js");
+</script>

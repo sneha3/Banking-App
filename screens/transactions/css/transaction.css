@@ -1,0 +1,79 @@
+.background-wrapper {
+  padding: 0.5rem 1rem 1rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cts-size {
+  font-size: 1rem;
+}
+
+.ref-size {
+  font-size: 0.8rem;
+}
+
+.span-yellow {
+  background-color: #ffc107;
+  padding: 0.5rem;
+}
+
+.transactions-table {
+  border-collapse: separate;
+  border-spacing: 0rem;
+}
+
+.transactions-table-head {
+  position: sticky;
+  top: 0;
+}
+
+.span-blue {
+  background-color: #007bff;
+  padding: 0.5rem;
+}
+
+.search {
+  width: 13rem;
+  height: 2rem;
+}
+
+.has-search {
+  float: right;
+  margin-bottom: -0.2rem;
+}
+
+th[data-tablesort] button {
+  padding: 0 0 0 0.4rem;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 1em;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+th[data-tablesort] button[value="1"]:after {
+  content: "\25BC";
+}
+
+th[data-tablesort] button[value="0"]:after {
+  content: "\25B2";
+}
+
+#transactionDrag {
+  cursor: move;
+}
+
+@media screen and (max-width: 700px) {
+  .background-wrapper {
+    margin-top: 1rem;
+  }
+}
+
+.mainHeading {
+  margin-bottom: -2rem;
+}
+.paginate_button {
+  padding: 0.2em 0.6em !important;
+  margin-bottom: 0.1rem !important;
+}

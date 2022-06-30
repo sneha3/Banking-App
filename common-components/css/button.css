@@ -1,0 +1,3 @@
+.disable-button:disabled {
+    cursor: no-drop;
+}

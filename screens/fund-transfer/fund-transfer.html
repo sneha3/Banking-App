@@ -1,0 +1,41 @@
+<div class="backgrounds-wrapper">
+    <div class="table-responsive bg-white shadow pr-4 pl-4" id="benificiary-table">
+        <table class="table table-hover transactions-table w-100" id="add-table-1">
+            <thead class="bg-white transactions-table-head">
+                <tr id="fund-row-1">
+                    <tr scope="row" colspan="5">
+                        <div class="font-weight-bold mt-2">Fund Transfer</div>
+                    </tr>
+                </tr>
+                <tr>
+                    <tr id="search-head" scope="row" colspan="5">
+                        <div class="font-weight-bold">
+                            <div class="totalBeneficiaries" id="total-beneficiaries"></div>
+                            <div class="form-group has-search d-flex flex-row">
+                                <button onclick="loadAddBeneficiaries()" type="button" class="btn btn-outline-primary btn-block mb-2 form contorl py-1 px-2 mr-1 pb-2 mt-1">
+                Add Beneficiary
+              </button>
+                                <input type="text" placeholder="Beneficiary's name" class="form-control mt-1" id="searchbar" onkeyup="app.search()" />
+                            </div>
+                        </div>
+                    </tr>
+                </tr>
+                <tr id="table-head-benificary">
+                    <th scope="col" class="pl-4" data-tablesort="text">Name</th>
+                    <th scope="col" class="pl-1" data-tablesort="text">Bank name</th>
+                    <th scope="col" data-tablesort="text">City</th>
+                    <th scope="col" data-tablesort="text">IFSC Code</th>
+                    <th scope="col">Transfer</th>
+                </tr>
+            </thead>
+            <tbody id="beneficiaries-body"></tbody>
+        </table>
+    </div>
+</div>
+<script>
+    loadJavascript("../../screens/fund-transfer/js/fund-transfer-data.js");
+    loadJavascript("../../screens/fund-transfer/js/search-beneficiary-name.js");
+    loadJavascript("../../screens/fund-transfer/js/submit-transfer.js");
+    loadCss("../../screens/fund-transfer/css/fund-transfer.css");
+    loadJavascript("../../common-components/js/disable-button.js");
+</script>

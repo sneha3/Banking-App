@@ -1,0 +1,56 @@
+<script>
+    loadCss("screens/cards/css/cards.css");
+    loadJavascript("screens/cards/js/cards.js");
+</script>
+<div class="card mx-auto cards-card shadow">
+    <div class="card-body">
+        <h5 class="card-title">Credit Cards <i class="bi bi-credit-card cards-icon"></i></h5>
+        <p class="card-text">
+            <label>Select Card</label>
+            <select  name="cards-ccards" id="cards-select" class="pt-1 pb-1" onchange="app.changecard()"></select>
+            <div id="cards-ctype">Card Type</div>
+            <p id="cards-type"></p>
+            <label>Last Statement Due</label>
+            <p id="cards-inr"></p>
+        </p>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <button class="btn btn-primary " id="cards-detail" data-toggle="modal" data-target="#card-transactions">More Details</button>
+            <button type="submit" id="cards-submit" class="btn btn-primary disable-button" disabled>Pay Now</button>
+        </div>
+        <div class="modal fade" id="card-transactions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Transactions for this credit card</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="table-responsive" id="card-transactions-table">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Narration</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Closing Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="card-transactions-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    loadJavascript("common-components/js/disable-button.js");
+</script>

@@ -1,0 +1,106 @@
+#common-navigation-nav-bar-collapse {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  height: 260%;
+  background-color: white;
+}
+
+.common-navigation-nav-list-collapse a {
+  display: block;
+  color: #000;
+  height: 3.125rem;
+  text-decoration: none;
+  font-size: large;
+  border-top: rgb(190, 187, 187) solid 0.063rem;
+  text-emphasis-position: initial;
+}
+
+.common-navigation-nav-list-collapse a:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  text-decoration: none;
+}
+.common-navigation-nav-list-collapse a.active {
+  background-color: rgba(14, 126, 231, 0.952);
+  color: white;
+  text-decoration: none;
+}
+
+.common-navigation-label-nav-desktop-collapse {
+  position: relative;
+  top: 0.45rem;
+  display: none;
+}
+
+.common-navigation-nav-icon-desktop-collapse {
+  position: relative;
+  top: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+.common-navigation-arrow-icon-desktop-collapse {
+  position: relative;
+  top: 0.75rem;
+  float: right;
+}
+
+.common-navigation-expand {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+#nav-right-double-arrow {
+  display: inline;
+}
+
+#nav-left-double-arrow {
+  display: none;
+  left: 11rem;
+}
+
+.common-navigation-nav-bar-collapse-tooltiptext {
+  visibility: hidden;
+  min-width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  margin-top: 0.5rem;
+  left: 3.9rem;
+  padding: 0.2rem;
+  z-index: 1;
+}
+
+.common-navigation-nav-list-collapse
+  .common-navigation-nav-bar-collapse-tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.common-navigation-nav-list-collapse:hover
+  .common-navigation-nav-bar-collapse-tooltiptext {
+  visibility: visible;
+}
+
+@media screen and (min-width: 1058px) and (max-width: 1239px) {
+  #common-navigation-nav-bar-collapse {
+    display: inline;
+    width: 3.5rem;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  #common-navigation-nav-bar-collapse {
+    display: none;
+  }
+}

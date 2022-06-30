@@ -1,0 +1,65 @@
+<div class="background-wrapper">
+    <div class="font-weight-bold">
+        Add Beneficiary
+        <hr />
+    </div>
+    <form id="add-beneficiary-form">
+        <div class="row ml-1">
+            <label>Select Bank Mode<span class="add-beneficiary-star">*</span></label>
+        </div>
+        <div class="form-check" onclick="app.disableAddBeneficiaryButton()">
+            <input type="radio" class="form-check-input" name="bankRadio" required>
+            <label class="form-check-label"><b>Within Bank</b></label>
+            <input type="radio" name="bankRadio" required>
+            <label class="form-check-label"><b>Other Bank</b></label>
+        </div>
+        <div class="row mt-2 ml-1">
+            <label>Beneficiary Account Number<span class="add-beneficiary-star">*</span></label>
+            <span class="text-danger font-weight-bold"></span>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3 mb-2">
+                <input type="number" class="form-control" name="Account Number" placeholder="Enter Account Number" id="account_number" onchange="app.validateAccountNumber()" onkeyup="app.disableAddBeneficiaryButton()">
+            </div>
+            <div class="col-md-3 ">
+                <input type="number" class="form-control" name="Account Number" placeholder="Re Enter Account Number" id="re_enter_account_number" onblur="app.validateForm()" onkeyup="app.disableAddBeneficiaryButton() "><span id="add-beneficiary-account-2"></span>
+            </div>
+            <div class="row mt-2 ml-2">
+                <span id="add-beneficiary-error-label"></span>
+            </div>
+        </div>
+        <div class=" row mt-2 ml-1 ">
+            <label>Beneficiary Details<span class="add-beneficiary-star ">*</span></label>
+        </div>
+        <div class="form-row ">
+            <div class="col-md-3 mb-2 ">
+                <input type="text " class="form-control " class="form-control " name="Account Holder Name " id="Account_h_name" placeholder="Enter Account Holder Name " onblur="app.validateForm()" onkeyup="app.disableAddBeneficiaryButton()"><span id="add-beneficiary-username"></span>
+            </div>
+            <div class="col-md-3 mb-2">
+                <input type="text" class="form-control" class="form-control" name="Bank Name" id="bank_name" placeholder="Enter Bank Name" onblur="app.validateForm()" onkeyup="app.disableAddBeneficiaryButton()"><span id="add-beneficiary-bankname"></span>
+            </div>
+            <div class=" col-md-3 ">
+                <input type="text " class="form-control " class="form-control " name="IFSC Code " id="IFSC_code" placeholder="Type IFSC Code " onkeyup="app.disableAddBeneficiaryButton()"><span id="add-beneficiary-ifsc"></span>
+            </div>
+        </div>
+        <div class="row mt-2 ml-1">
+            <label>Upload Beneficiary Avatar</label>
+        </div>
+        <div class="custom-file col-md-4 ">
+            <input type="file" class="custom-file-input ">
+            <label class="custom-file-label" data-browse="Browse"></label>
+        </div>
+        <div class="form-row row mt-5 d-flex justify-content-center">
+            <div class="col-md-3 mb-2">
+                <button type="button" class="btn btn-outline-primary form-control" onclick="loadFundsTransferScreens()">Cancel</button>
+            </div>
+            <div class="col-md-3 ">
+                <button class="btn btn-primary form-control add-beneficiary-save-btn" id="add-beneficiary-button" disabled="disabled">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    loadCss("screens/fund-transfer/css/add-beneficiary-form.css");
+    loadJavascript("../../screens/fund-transfer/js/add-beneficiary-validation.js");
+</script>

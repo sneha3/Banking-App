@@ -1,0 +1,27 @@
+<script>
+    loadJavascript("screens/bill-and-recharge/js/bill-recharge.js");
+    loadCss("screens/bill-and-recharge/css/bill-recharge.css");
+</script>
+<div class="card mx-auto bill-recharge-card">
+    <div class="card-body">
+        <div class="font-weight-bold pt-2 pb-2">
+            Bills & Recharge <i class="bi bi-receipt recharge-icon"></i>
+        </div>
+        <form class="needs-validation" onsubmit="sendBillRequest()">
+            <div class="form-group">
+                <label for="bill-narration">Narration</label>
+                <input class="form-control" id="bill-narration" type="text" placeholder="Narration" onkeyup="app.billRechargeDisablePayBtn()" />
+            </div>
+            <div class="form-group">
+                <label for="">Amount</label>
+                <input class="form-control" id="bill-amount" type="number" step="0.1" placeholder="Amount" onkeyup="app.billRechargeDisablePayBtn()" />
+            </div>
+            <div class="text-center mt-5">
+                <input type="submit" class="btn btn-primary disable-button" id="bill-recharge-pay-now" value="Pay Now" disabled></input>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    loadJavascript("common-components/js/disable-button.js");
+</script>
